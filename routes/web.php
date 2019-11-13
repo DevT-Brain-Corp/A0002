@@ -14,3 +14,9 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Auth::routes();
+
+Route::get('/dashboard', 'HomeController@index')->name('dashboard');
+Route::get('/kasir', 'HomeController@kasir')->name('kasir');
+Route::get('/rekap', 'HomeController@rekap')->name('rekap');
