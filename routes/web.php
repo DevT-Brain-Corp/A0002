@@ -18,5 +18,8 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/dashboard', 'HomeController@index')->name('dashboard');
-Route::get('/kasir', 'HomeController@kasir')->name('kasir');
 Route::get('/rekap', 'HomeController@rekap')->name('rekap');
+//route untuk kasir
+Route::get('/kasir', 'KasirsController@index')->name('kasir');
+Route::post('/kasir', 'KasirsController@store')->name('kasir');
+Route::delete('/kasir/{kasir}','KasirsController@destroy');

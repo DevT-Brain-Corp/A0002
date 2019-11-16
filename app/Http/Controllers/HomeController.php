@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Kasir;
 
 class HomeController extends Controller
 {
@@ -23,12 +24,14 @@ class HomeController extends Controller
      */
     public function index()
     {
+
         return view('index');
+
     }
 
     public function kasir()
     {
-        return view('kasir');
+      
     }
 
     public function rekap()
