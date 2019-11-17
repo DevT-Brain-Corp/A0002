@@ -14,27 +14,10 @@ class KasirsController extends Controller
      */
     public function index()
     {
-        //
         $kasir = Kasir::all();
         return view('kasir',compact('kasir'));
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
-    }
-
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
     public function store(Request $request)
     {
         //
@@ -47,49 +30,8 @@ class KasirsController extends Controller
         return redirect('kasir')->with('status','Barang Berhasil Ditambah');
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Kasir  $kasir
-     * @return \Illuminate\Http\Response
-     */
-    public function show(Kasir $kasir)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Kasir  $kasir
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(Kasir $kasir)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Kasir  $kasir
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, Kasir $kasir)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Kasir  $kasir
-     * @return \Illuminate\Http\Response
-     */
     public function destroy(Kasir $kasir)
     {
-        //
         Kasir::destroy($kasir->id);
         return redirect('/kasir')->with('status','Dihapus Berhasil');
     }

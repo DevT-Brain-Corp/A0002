@@ -33,18 +33,6 @@
       <span>Kasir</span></a>
   </li>
 
-  <hr class="sidebar-divider">
-
-  <div class="sidebar-heading">
-    Hasil Rekapan
-  </div>
-
-  <li class="nav-item">
-    <a class="nav-link" href="{{route('rekap')}}">
-      <i class="fas fa-fw fa-table"></i>
-      <span>Rekapan Penjualan</span></a>
-  </li>
-
   <!-- Divider -->
   <hr class="sidebar-divider d-none d-md-block">
 
